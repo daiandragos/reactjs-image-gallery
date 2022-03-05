@@ -3,8 +3,8 @@ import Gallery from "./components/Gallery";
 
 import './App.css';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 const App = () => {
-  const API_KEY = "10836796-eb6525a7aca1f7f10f89cf7a0";
   const [images, setImages] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
